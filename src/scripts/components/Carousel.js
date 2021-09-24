@@ -11,7 +11,8 @@ export default class Carousel {
 
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
-      slidesPerView: 1,
+      slidesPerView: 1
+      ,
       spaceBetween: 30,
       loop: true,
       navigation: {
@@ -22,14 +23,7 @@ export default class Carousel {
         el: '.swiper-pagination',
         type: 'bullets',
       },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
+
     };
 
     this.init();
