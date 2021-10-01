@@ -7,7 +7,7 @@
     width: 80%;
 
     section:not(.hero), footer{
-        padding-left:var(--spacing-lg);
+        padding:0 var(--spacing-lg);
     }
 }
 
