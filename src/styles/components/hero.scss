@@ -1,0 +1,13 @@
+.hero{
+    .swiper-pagination{
+        position:static;
+        text-align: left;
+    }
+    .swiper-pagination-bullet{
+        opacity:1;
+        background: var( --color-black);
+    }
+    .swiper-pagination-bullet-active{
+        background: var( --color-bg-tertiary);
+    }
+}
