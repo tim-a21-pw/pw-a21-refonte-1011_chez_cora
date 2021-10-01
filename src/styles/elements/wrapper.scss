@@ -5,8 +5,9 @@
 .wrapper {
     margin-left:auto;
     width: 80%;
-    section, footer{
-         padding-left:var(--spacing-lg);
+
+    section:not(.hero), footer{
+        padding-left:var(--spacing-lg);
     }
 }
 

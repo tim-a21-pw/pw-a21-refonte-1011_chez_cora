@@ -1,4 +1,7 @@
 .hero{
+    .swiper-container{
+        width:100%;
+    }
     .swiper-pagination{
         position:static;
         text-align: left;
@@ -9,5 +12,9 @@
     }
     .swiper-pagination-bullet-active{
         background: var( --color-bg-tertiary);
+    }
+
+    h1{
+        padding-left:var(--spacing-lg);
     }
 }
