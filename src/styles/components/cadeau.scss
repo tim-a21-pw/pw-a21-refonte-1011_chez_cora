@@ -1,39 +1,55 @@
-.infoCarteCadeau {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        'pratique perso'
-        'delicieux donner';
-}
-.subTittle {
-    background-color: var(--color-bg-secondary);
-}
-.pratique {
-    grid-area: pratique;
-    color: var(--color-white);
-    background-color: var(--color-bg-tertiary);
-    h2 {
-        color: var(--color-white);
+.section__carte{
+    display:flex;
+    justify-content: space-between;
+    &:nth-child(1){
+        background-image: linear-gradient(
+                to right,
+                var(--color-bg-tertiary),
+                var(--color-bg-tertiary) 50%,
+                var(--color-bg-quaternary) 50%
+        );
     }
-}
-.perso {
-    grid-area: perso;
-    color: var(--color-white);
-    background-color: var(--color-bg-quaternary);
-    h2 {
-        color: var(--color-white);
+
+    &:nth-child(2){
+        background-image: linear-gradient(
+                to right,
+                var(--color-bg-secondary),
+                var(--color-bg-secondary) 50%,
+                var(--color-bg-primary) 50%
+        );
     }
+    .infoCarteCadeau__carte {
+        width:50%;
+    }
+    .subTittle {
+
+    }
+
+    .pratique {
+        color: var(--color-white);
+
+        h2 {
+            color: var(--color-white);
+        }
+    }
+    .perso {
+
+        color: var(--color-white);
+
+        h2 {
+            color: var(--color-white);
+        }
+    }
+    .delicieux {
+
+
+    }
+    .donner{
+
+    }
+
+
 }
-.delicieux {
-    grid-area: delicieux;
-    background-color: var(--color-bg-secondary);
-}
-.donner{
-    grid-area: donner;
-}
-.infoCarteCadeau__rdv {
+.section__rdv{
     background-color: var(--color-bg-secondary);
 }
