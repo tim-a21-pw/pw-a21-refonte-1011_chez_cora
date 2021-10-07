@@ -3,11 +3,12 @@
    ========================================================================== */
 
 .wrapper {
-    margin-left:auto;
+    margin-left: auto;
     width: 80%;
 
-    section:not(.hero), footer{
-        padding:0 var(--spacing-lg);
+    section:not(.hero),
+    footer {
+        padding: 0 var(--spacing-lg);
     }
 }
 
