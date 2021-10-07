@@ -22,6 +22,24 @@
     }
 
     .menu__items {
+        display: flex;
+        justify-content: space-around;
         width: 80%;
+        .item {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 35%;
+            height: 625px;
+            img {
+                padding: 85px 36px;
+                background-image: linear-gradient(
+                    to top,
+                    var(--color-bg-quaternary),
+                    var(--color-bg-quaternary) 50%,
+                    var(--color-bg-secondary) 50%
+                );
+            }
+        }
     }
 }

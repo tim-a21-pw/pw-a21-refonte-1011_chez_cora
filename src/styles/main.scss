@@ -29,7 +29,7 @@
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper.scss';
-@import '../../node_modules/swiper/components/pagination/pagination.scss';
+@import '../../node_modules/swiper/components/pagination/pagination';
 
 @import 'components/header';
 @import 'components/icons';
@@ -40,10 +40,11 @@
 @import 'components/nav';
 @import 'components/hero';
 @import 'components/accueil';
-@import 'components/cadeau.scss';
-@import 'components/fidelite.scss';
-@import 'components/contact.scss';
-@import 'components/apropos.scss';
+@import 'components/cadeau';
+@import 'components/fidelite';
+@import 'components/contact';
+@import 'components/apropos';
+@import 'components/menu';
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import 'utilities/accessibility';
