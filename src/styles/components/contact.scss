@@ -1,3 +1,20 @@
+.desir {
+    padding: var(--spacing-lg) 0;
+    font-size: var(--font-size-content);
+}
+
+.commentaires,
+.internet,
+.ecrire {
+    h3 {
+        padding: var(--spacing-lg) 0 var(--spacing-sm) 0;
+    }
+
+    p {
+        padding-bottom: var(--spacing-lg);
+    }
+}
+
 .ecrire {
     color: var(--color-white);
     background-color: var(--color-bg-tertiary);
@@ -14,4 +31,7 @@
 }
 .formulaire {
     background-color: var(--color-bg-secondary);
+    .form {
+        padding: var(--spacing-lg) 0;
+    }
 }
