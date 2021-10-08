@@ -1,17 +1,80 @@
-.infoCarte{
+.infoCarte {
     background-color: var(--color-bg-tertiary);
     color: var(--color-white);
-    h3{
+    padding-bottom: 50px;
+    h3 {
         color: var(--color-white);
+        &:nth-child(1) {
+            padding-top: 50px;
+        }
+        &:nth-child(3) {
+            padding-top: 25px;
+        }
+        &:nth-child(5) {
+            padding-top: 25px;
+        }
+    }
+    p {
+        text-align: justify;
+        &:nth-last-child(1) {
+            padding-bottom: 50px;
+        }
     }
 }
-.questionCarte{
+.questionCarte {
     background-color: var(--color-bg-quaternary);
     color: var(--color-white);
-    h2, h3{
+    h2,
+    h3 {
         color: var(--color-white);
     }
+    h2{
+        padding-top: 50px;
+    }
+    p{
+        &:nth-last-child(1){
+            padding-bottom: 50px;
+        }
+    }
+    h3{
+        padding-top: 25px;
+    }
 }
-.problemesCarte{
+.problemesCarte {
     background-color: var(--color-bg-secondary);
+    text-align: justify;
+    h2{
+        padding-top: 50px;
+    }
+    p{
+        padding-bottom: 50px;
+    }
+}
+.conditionsCarte{
+    h3{
+        padding-top: 50px;
+    }
+    p{
+        padding-bottom: 50px;
+    }
+}
+.introductionCarte{
+    p{
+        padding-top: 50px;
+        text-align: justify;
+    }
+}
+.subTittle{
+    ul{
+        padding-top: 50px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
 }

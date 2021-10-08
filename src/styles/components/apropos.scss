@@ -1,17 +1,61 @@
-.histoire{
+.histoire {
     background-color: var(--color-bg-secondary);
-}
-.franchisage{
-    background-color: var(--color-bg-tertiary);
-    color: var(--color-white);
-    h2{
-        color: var(--color-white);
+    h2 {
+        padding-top: 50px;
+    }
+    p {
+        padding-top: 25px;
+        &:nth-last-child(1) {
+            padding-bottom: 50px;
+        }
     }
 }
-.fondation{
+.franchisage {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-white);
+    h2 {
+        color: var(--color-white);
+        padding-top: 50px;
+    }
+    p {
+        padding-top: 25px;
+        &:nth-last-child(1) {
+            padding-bottom: 50px;
+        }
+    }
+}
+.fondatrice {
+    h2 {
+        padding-top: 50px;
+    }
+    p {
+        padding-top: 25px;
+        &:nth-last-child(1) {
+            padding-bottom: 50px;
+        }
+    }
+    h3 {
+        padding-top: 25px;
+    }
+}
+.fondation {
     background-color: var(--color-bg-quaternary);
     color: var(--color-white);
-    h2, h3, a{
+    h2,
+    h3,
+    a {
         color: var(--color-white);
+    }
+    h2 {
+        padding-top: 50px;
+    }
+    h3{
+        padding-top: 25px;
+    }
+    p {
+        padding-top: 25px;
+    }
+    ul{
+        padding-bottom: 50px;
     }
 }
