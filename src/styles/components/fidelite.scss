@@ -28,53 +28,66 @@
     h3 {
         color: var(--color-white);
     }
-    h2{
+    h2 {
         padding-top: 50px;
     }
-    p{
-        &:nth-last-child(1){
+    p {
+        &:nth-last-child(1) {
             padding-bottom: 50px;
         }
     }
-    h3{
+    h3 {
         padding-top: 25px;
     }
 }
 .problemesCarte {
     background-color: var(--color-bg-secondary);
     text-align: justify;
-    h2{
+    h2 {
         padding-top: 50px;
     }
-    p{
+    p {
         padding-bottom: 50px;
     }
 }
-.conditionsCarte{
-    h3{
+.conditionsCarte {
+    h3 {
         padding-top: 50px;
     }
-    p{
+    p {
         padding-bottom: 50px;
     }
 }
-.introductionCarte{
-    p{
+.introductionCarte {
+    p {
         padding-top: 50px;
         text-align: justify;
     }
 }
-.subTittle{
-    ul{
+.categorie-fidelite {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
         padding-top: 50px;
         margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        li{
-            margin-left: 40px;
-            margin-right: 40px;
+        div {
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                margin: 0 var(--spacing-xs);
+                text-transform: uppercase;
+                font-weight: var(--fw-semibold);
+                div {
+                    background-color: var(--color-black);
+                    width: 10px;
+                    height: 2px;
+                }
+            }
         }
     }
 }

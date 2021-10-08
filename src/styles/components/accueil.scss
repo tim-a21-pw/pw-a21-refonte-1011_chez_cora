@@ -1,37 +1,68 @@
 .divTop {
     display: flex;
 }
-.subTittle{
+.subTittle {
     background-color: var(--color-bg-secondary);
-    p{
-
-        padding:var(--spacing-lg) 0;
+    p {
+        padding: var(--spacing-lg) 0;
     }
 }
 
-.sectionCassolettes, .sectionFavorisAdos, .sectionPlatsPartager, .sectionConcours{
+.sectionCassolettes,
+.sectionFavorisAdos,
+.sectionPlatsPartager,
+.sectionConcours {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 15px;
 }
-.sectionCassolettes, .sectionPlatsPartager{
+.sectionCassolettes,
+.sectionPlatsPartager {
     color: var(--color-white);
     h2 {
         color: var(--color-white);
     }
 }
 
-
-.sectionCassolettes {
-    
+.sectionCassolettes,
+.sectionFavorisAdos {
+    padding: 15px;
     background-color: var(--color-bg-tertiary);
+    img {
+        margin: auto;
+        padding: var(--spacing-md) 0;
+        width: 80%;
+    }
+
+    p,
+    h2 {
+        padding-bottom: var(--spacing-md);
+    }
 }
 .sectionFavorisAdos {
+    background-color: var(--color-bg-primary);
 }
-.sectionPlatsPartager {
+
+.sectionPlatsPartager,
+.sectionConcours {
     background-color: var(--color-bg-quaternary);
+
+    img {
+        width: 80%;
+        margin-left: auto;
+    }
+    .wrapper {
+        padding: 0 var(--spacing-lg);
+        h2 {
+            width: 30%;
+            padding: var(--spacing-lg) 0 var(--spacing-sm) 0;
+        }
+
+        p {
+            padding-bottom: var(--spacing-lg);
+        }
+    }
 }
 .sectionConcours {
     background-color: var(--color-bg-secondary);
