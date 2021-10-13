@@ -1,64 +1,212 @@
-body {
-    .menu_principal {
-        padding-left: 74px;
-        width: 20%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
+header {
+    padding: 74px 25px 74px 74px;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-        background-color: var(--color-bg-quinary);
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+    background-color: var(--color-bg-quinary);
+    display: flex;
+    justify-content: center;
 
-        text-transform: uppercase;
+    flex-direction: column;
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+    text-transform: uppercase;
 
-            &:nth-child(2) {
-                li {
-                    font-weight: var(--fw-semibold);
-                }
+    @media screen and (max-width: $breakpoint-lg) {
+        padding: 25px 10px 25px 25px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 10%;
+        width: 12%;
+        padding: 0;
+
+        z-index: 99;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        &:nth-child(2) {
+            li {
+                font-weight: var(--fw-semibold);
             }
         }
+    }
+
+    p {
+        font-weight: var(--fw-semibold);
+        text-transform: uppercase;
+    }
+
+    .langue {
+        cursor: pointer;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .coordonnerU {
+        font-weight: var(--fw-regular);
+    }
+    button {
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: var(--font-size-button);
+
+        width: 90%;
+        height: 50%;
+        margin-top: var(--spacing-sm);
 
         p {
-            font-weight: var(--fw-semibold);
-            text-transform: uppercase;
+            padding: 0 1%;
         }
-
-        .langue {
-            cursor: pointer;
-            margin-bottom: var(--spacing-md);
+        svg:nth-child(3) {
+            transform: rotate(90deg);
         }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
-        .coordonnerU {
-            font-weight: var(--fw-regular);
+    //--------------------------------menu principal-------------------------------------//
+    .menu_principal {
+        @media screen and (max-width: $breakpoint-md) {
+            display: none;
         }
         button {
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            font-size: var(--font-size-button);
-
-            padding: 5% 15%;
-            margin-top: var(--spacing-sm);
-
-            p {
-                padding: 0 10%;
+            @media screen and (max-width: $breakpoint-lg) {
+                font-size: var(--font-size-button-responsive);
             }
-            svg:nth-child(3) {
-                transform: rotate(90deg);
+        }
+    }
+
+    //-------------------------------menu mobile-----------------------------------------//@at-root
+    .navMobile,
+    .mobileModal {
+        display: none;
+
+        @media screen and (max-width: $breakpoint-md) {
+            display: block;
+        }
+    }
+
+    .navMobile {
+        position: relative;
+        height: 100vh;
+        padding-top: 15%;
+
+        .hamburgerEtLogo {
+            padding: var(--spacing-sm) 0;
+            margin: 0;
+            // background-color: var(--color-white);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .mobileModal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-out;
+
+            z-index: 1;
+
+            background-color: var(--color-bg-quinary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            text-transform: uppercase;
+
+            font-size: var(--font-size-content);
+
+            .logoSite {
+                width: 40%;
+            }
+            ul {
+                width: 30%;
+                li {
+                    padding-top: var(--spacing-xs);
+                }
+            }
+
+            .langue {
+                width: 30%;
+            }
+
+            .trouver_restaurant {
+                width: 30%;
+            }
+
+            .nav-is-active & {
+                transform: translateY(0);
+            }
+        }
+
+        .menu-hamburger {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span {
+                background-color: var(--color-black);
+                display: block;
+                height: 10px;
+                width: 50px;
+
+                margin-bottom: 6.5px;
+
+                transition: 0.3s transform;
+
+                &:nth-child(1) {
+                    transform-origin: left top;
+                }
+                &:nth-child(2) {
+                    transform-origin: left top;
+                }
+                &:nth-child(3) {
+                    transform-origin: left bottom;
+                }
+            }
+
+            .nav-is-active & {
+                span {
+                    top: calc(50% - var(--bar-height) / 2);
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        transform: scaleX(0);
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                    }
+                }
             }
             &:hover {
-                text-decoration: underline;
+                span {
+                    border: var(--color-black) 2px solid;
+                    background-color: transparent;
+                }
             }
         }
     }

@@ -3,6 +3,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 2% 0;
+
     .socials {
         width: 10%;
         display: flex;
@@ -42,6 +43,10 @@ footer {
         flex-direction: column;
 
         width: 88%;
+
+        @media screen and (max-width: $breakpoint-md) {
+            padding-left: var(--spacing-sm);
+        }
         ul {
             padding: 0;
             display: flex;
@@ -50,10 +55,20 @@ footer {
             justify-content: space-between;
 
             margin: 0;
+
+            text-transform: uppercase;
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: var(--font-size-button);
+            }
         }
 
         .copyright {
             font-size: var(--font-size-button);
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: var(--font-size-button-responsive);
+            }
         }
     }
 }

@@ -6,6 +6,10 @@
     margin-left: auto;
     width: 80%;
 
+    @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+    }
+
     section:not(.hero),
     footer {
         padding: 0 var(--spacing-lg);

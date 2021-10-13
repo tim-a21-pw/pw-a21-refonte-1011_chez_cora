@@ -15,55 +15,122 @@
     </head>
 
     <body>
-        <aside class="menu_principal">
-            <a href="index.html">
-                <img
-                    class="logoSite"
-                    src="assets/images/logo-chez-cora-dejeuners-diners 1.png"
-                    alt=""
-                />
-            </a>
-
-            <ul>
-                <li><a href="menu.html">Déjeuner</a></li>
-                <li><a href="menu.html">Favoris du midi</a></li>
-                <li><a href="menu.html">Enfants</a></li>
-                <li><a href="cartecadeau.html">Carte-cadeau</a></li>
-                <li><a href="fidelite.html">Fidélité</a></li>
-                <li><a href="">Devenir Franchisé</a></li>
-            </ul>
-
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="">Moi j'déjeune</a></li>
-                <li><a href="">Infolettre</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="">Emplois</a></li>
-                <li><a href="contact.html">Nous joindre</a></li>
-            </ul>
-
-            <div class="langue">
-                <p>English</p>
-            </div>
-
-            <div class="trouver_restaurant">
-                <p>
-                    Trouver un <br />
-                    restaurant
-                </p>
-                <a href="">
-                    <button>
-                        <svg class="icon icon--lg icon--carte">
-                            <use xlink:href="#icon-carte"></use>
-                        </svg>
-                        <p class="coordonnerU">Province/Ville/Code postal</p>
-                        <svg class="icon icon--xs">
-                            <use xlink:href="#icon-fleche"></use>
-                        </svg>
-                    </button>
+        <header class="header" data-component="Header">
+            <aside class="menu_principal" data-component="Header">
+                <a href="index.html">
+                    <img
+                        class="logoSite"
+                        src="assets/images/logo-chez-cora-dejeuners-diners 1.png"
+                        alt=""
+                    />
                 </a>
-            </div>
-        </aside>
+
+                <ul>
+                    <li><a href="menu.html">Déjeuner</a></li>
+                    <li><a href="menu.html#favoris">Favoris du midi</a></li>
+                    <li><a href="menu.html#enfants">Enfants</a></li>
+                    <li><a href="cartecadeau.html">Carte-cadeau</a></li>
+                    <li><a href="fidelite.html">Fidélité</a></li>
+                    <li><a href="">Devenir Franchisé</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="">Moi j'déjeune</a></li>
+                    <li><a href="">Infolettre</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="">Emplois</a></li>
+                    <li><a href="contact.html">Nous joindre</a></li>
+                </ul>
+
+                <div class="langue">
+                    <p>English</p>
+                </div>
+
+                <div class="trouver_restaurant">
+                    <p>
+                        Trouver un <br />
+                        restaurant
+                    </p>
+                    <a href="">
+                        <button>
+                            <svg class="icon icon--lg icon--carte">
+                                <use xlink:href="#icon-carte"></use>
+                            </svg>
+                            <p class="coordonnerU">
+                                Province/Ville/Code postal
+                            </p>
+                            <svg class="icon icon--xs">
+                                <use xlink:href="#icon-fleche"></use>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </aside>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"> </a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <img
+                        class="logoSite"
+                        src="assets/images/logo-chez-cora-dejeuners-diners 1.png"
+                        alt=""
+                    />
+                    <ul>
+                        <li><a href="menu.html">Déjeuner</a></li>
+                        <li>
+                            <a href="menu.html#favoris">Favoris du midi</a>
+                        </li>
+                        <li><a href="menu.html#enfants">Enfants</a></li>
+                        <li><a href="cartecadeau.html">Carte-cadeau</a></li>
+                        <li><a href="fidelite.html">Fidélité</a></li>
+                        <li><a href="">Devenir Franchisé</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="">Moi j'déjeune</a></li>
+                        <li><a href="">Infolettre</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="">Emplois</a></li>
+                        <li><a href="contact.html">Nous joindre</a></li>
+                    </ul>
+
+                    <div class="langue">
+                        <p>English</p>
+                    </div>
+
+                    <div class="trouver_restaurant">
+                        <p>
+                            Trouver un <br />
+                            restaurant
+                        </p>
+                        <a href="">
+                            <button>
+                                <svg class="icon icon--lg icon--carte">
+                                    <use xlink:href="#icon-carte"></use>
+                                </svg>
+                                <p class="coordonnerU">
+                                    Province/Ville/Code postal
+                                </p>
+                                <svg class="icon icon--xs">
+                                    <use xlink:href="#icon-fleche"></use>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+
         <div class="wrapper">
             <section class="hero">
                 <div

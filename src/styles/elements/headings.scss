@@ -4,7 +4,7 @@
 
 h1,
 h2,
-h3{
+h3 {
     font-family: var(--font-primary);
     line-height: 1;
     font-weight: extra-bold;
@@ -16,11 +16,18 @@ h3{
 h1 {
     font-size: var(--font-size-h1);
     margin: 0;
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: var(--font-size-h1-responsive);
+    }
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: var(--font-size-h2-responsive);
+    }
 }
 
 h3 {
