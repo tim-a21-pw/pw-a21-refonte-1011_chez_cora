@@ -4,6 +4,10 @@ footer {
     align-items: center;
     margin: 2% 0;
 
+    @media screen and (max-width: $breakpoint-xs) {
+        margin-bottom: 7%;
+    }
+
     .socials {
         width: 10%;
         display: flex;
@@ -32,6 +36,10 @@ footer {
                 border-radius: 100%;
                 position: relative;
                 margin-left: 40%;
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: var(--spacing-sm);
+                }
             }
             svg {
                 position: absolute;
@@ -56,6 +64,10 @@ footer {
         @media screen and (max-width: $breakpoint-md) {
             padding-left: var(--spacing-sm);
         }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 75%;
+        }
         ul {
             padding: 0;
             display: flex;
@@ -70,6 +82,12 @@ footer {
             @media screen and (max-width: $breakpoint-md) {
                 font-size: var(--font-size-button);
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                flex-direction: column;
+
+                font-size: var(--font-size-content-responsive);
+            }
         }
 
         .copyright {
@@ -78,6 +96,18 @@ footer {
             @media screen and (max-width: $breakpoint-md) {
                 font-size: var(--font-size-button-responsive);
             }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                display: none;
+            }
         }
+    }
+}
+.copyright--mobile {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        display: block;
+        font-size: var(--font-size-button);
     }
 }

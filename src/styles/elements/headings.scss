@@ -20,6 +20,10 @@ h1 {
     @media screen and (max-width: $breakpoint-md) {
         font-size: var(--font-size-h1-responsive);
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-h1-mobile);
+    }
 }
 
 h2 {

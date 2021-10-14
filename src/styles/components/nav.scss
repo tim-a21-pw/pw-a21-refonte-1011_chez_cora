@@ -26,6 +26,10 @@ header {
         z-index: 99;
     }
 
+    @media screen and (max-width: $breakpoint-xs) {
+        width: 25%;
+    }
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -137,11 +141,19 @@ header {
 
             .logoSite {
                 width: 40%;
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 30%;
+                }
             }
             ul {
                 width: 30%;
                 li {
                     padding-top: var(--spacing-xs);
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin: 0;
                 }
             }
 
