@@ -73,3 +73,14 @@
 .sectionConcours {
     background-color: var(--color-bg-secondary);
 }
+@media screen and (max-width: $breakpoint-sm) {
+    .divTop {
+        flex-direction: column;
+        .sectionCassolettes {
+            width: 100%;
+        }
+        .sectionFavorisAdos {
+            width: 100%;
+        }
+    }
+}
