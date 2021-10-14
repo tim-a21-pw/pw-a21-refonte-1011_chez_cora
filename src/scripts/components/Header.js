@@ -12,8 +12,6 @@ export default class Header {
   }
 
   init() {
-    console.log('this');
-
     if (this.element.dataset.autoHide != 'false') {
       window.addEventListener('scroll', this.onScroll.bind(this));
     }
