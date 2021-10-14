@@ -111,8 +111,8 @@
             background-image: linear-gradient(
                 to top,
                 var(--color-bg-secondary),
-                var(--color-bg-secondary) 55%,
-                var(--color-bg-primary) 45%
+                var(--color-bg-secondary) 50%,
+                var(--color-bg-primary) 50%
             );
         }
         .donner {
@@ -133,5 +133,22 @@
     }
     .section__rdv {
         background-color: var(--color);
+    }
+    .subTittle {
+        img {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-xs) {
+    .section__carte {
+        &:nth-child(2) {
+            background-image: linear-gradient(
+                to top,
+                var(--color-bg-secondary),
+                var(--color-bg-secondary) 55%,
+                var(--color-bg-primary) 45%
+            );
+        }
     }
 }
