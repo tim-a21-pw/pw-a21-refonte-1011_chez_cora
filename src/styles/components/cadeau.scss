@@ -95,3 +95,40 @@
         width: 30%;
     }
 }
+@media screen and (max-width: $breakpoint-sm) {
+    .section__carte {
+        flex-direction: column;
+        &:nth-child(1) {
+            background-image: linear-gradient(
+                to top,
+                var(--color-bg-tertiary),
+                var(--color-bg-tertiary) 50%,
+                var(--color-bg-quaternary) 50%
+            );
+        }
+
+        &:nth-child(2) {
+            background-image: linear-gradient(
+                to top,
+                var(--color-bg-secondary),
+                var(--color-bg-secondary) 50%,
+                var(--color-bg-primary) 50%
+            );
+        }
+        .donner {
+            padding: var(--spacing-lg) 0 var(--spacing-lg) 0;
+        }
+        .perso {
+            padding: var(--spacing-lg) 0 var(--spacing-lg) 0;
+        }
+        .delicieux {
+            padding: var(--spacing-lg) 0 var(--spacing-lg) 0;
+        }
+        .pratique {
+            padding: var(--spacing-lg) 0 var(--spacing-lg) 0;
+        }
+        .infoCarteCadeau__carte {
+            width: 100%;
+        }
+    }
+}
