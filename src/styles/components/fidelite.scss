@@ -91,19 +91,41 @@
         }
     }
 }
+.tiretMobile {
+    display: none;
+}
+@media screen and (max-width: $breakpoint-lg) {
+    .categorie-fidelite {
+        li {
+            font-size: var(--font-size-button);
+        }
+    }
+}
 @media screen and (max-width: $breakpoint-sm) {
-    .categorie-fidelite{
+    .categorie-fidelite {
         text-align: center;
-        ul{
+        ul {
+            padding-top: 25px;
+            padding-bottom: 25px;
             padding-left: 0;
         }
-        .section1{
+        .section1 {
             display: flex;
             flex-direction: column;
         }
-        .section2{
+        .section2 {
             display: flex;
             flex-direction: column;
         }
+    }
+    .section1 {
+        div {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    .tiretMobile {
+        display: block;
     }
 }
