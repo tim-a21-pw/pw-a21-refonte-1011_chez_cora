@@ -1,5 +1,11 @@
 .divTop {
     display: flex;
+    .sectionCassolettes {
+        width: 50%;
+    }
+    .sectionFavorisAdos {
+        width: 50%;
+    }
 }
 .subTittle {
     background-color: var(--color-bg-secondary);
@@ -49,7 +55,7 @@
     background-color: var(--color-bg-quaternary);
 
     img {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
     }
     .wrapper {
