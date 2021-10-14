@@ -19,7 +19,7 @@ header {
     }
 
     @media screen and (max-width: $breakpoint-md) {
-        height: 10%;
+        height: var(--spacing-xl);
         width: 12%;
         padding: 0;
 
@@ -27,6 +27,7 @@ header {
     }
 
     @media screen and (max-width: $breakpoint-xs) {
+        height: var(--spacing-xl);
         width: 25%;
     }
 
@@ -62,10 +63,23 @@ header {
         align-items: center;
         justify-content: space-around;
         font-size: var(--font-size-button);
+        background-color: var(--color-bg-secondary);
 
         width: 90%;
         height: 50%;
+        padding: var(--spacing-sm) 0;
         margin-top: var(--spacing-sm);
+
+        @media screen and (max-width: $breakpoint-md) {
+            padding: 0 var(--spacing-sm);
+            width: 110%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: var(--font-size-button-responsive);
+
+            width: 100%;
+        }
 
         p {
             padding: 0 1%;
@@ -102,7 +116,7 @@ header {
 
     .navMobile {
         position: relative;
-        height: 100vh;
+        height: 100%;
 
         .hamburgerEtLogo {
             padding: var(--spacing-sm) 0;
@@ -139,30 +153,69 @@ header {
 
             font-size: var(--font-size-content);
 
-            .logoSite {
-                width: 40%;
+            img {
+                width: 100%;
 
                 @media screen and (max-width: $breakpoint-xs) {
-                    width: 30%;
+                    width: 70%;
                 }
             }
+
             ul {
                 width: 30%;
                 li {
                     padding-top: var(--spacing-xs);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        padding-top: 0;
+                    }
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 20%;
+
+                    margin: var(--spacing-xs);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 25%;
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
-                    margin: 0;
+                    width: 50%;
                 }
             }
 
             .langue {
                 width: 30%;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 20%;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 25%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 50%;
+                }
             }
 
             .trouver_restaurant {
                 width: 30%;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 20%;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 25%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 50%;
+                }
             }
 
             .nav-is-active & {
