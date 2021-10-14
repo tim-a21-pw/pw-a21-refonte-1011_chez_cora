@@ -32,6 +32,10 @@ h2 {
     @media screen and (max-width: $breakpoint-md) {
         font-size: var(--font-size-h2-responsive);
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-h2-mobile);
+    }
 }
 
 h3 {
