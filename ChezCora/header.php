@@ -16,7 +16,7 @@
         <?php wp_head(); ?>
     </head>
 
-    <body> <?php body_class(); ?>
+    <body <?php body_class(); ?>> 
         <header class="header" data-component="Header">
             <aside class="menu_principal">
                 <a href="index.html">
