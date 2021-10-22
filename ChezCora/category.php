@@ -27,9 +27,24 @@
 
         <div class="menu">
             <aside class="sous-menu">
-                <?php wp_nav_menu(array(
-                    'theme_location' => 'menu_menu',)
-                ); ?>
+                <nav>
+                    <ul>
+                        <li><a href="">Crêpes salées</a></li>
+                        <li><a href="">Fruits frais</a></li>
+                        <li><a href="">Pain doré</a></li>
+                        <li><a href="">Gaufres</a></li>
+                        <li><a href="">Crêpes aux fruits</a></li>
+                        <li><a href="">Oeuf</a></li>
+                        <li><a href="">Pancakes</a></li>
+                        <li><a href="">Sucré-Salé</a></li>
+                        <li><a href="">Oeuf Ben et Dictine</a></li>
+                        <li><a href="">Omelettes</a></li>
+                        <li><a href="">Sandwiches</a></li>
+                        <li><a href="">Favoris des ados</a></li>
+                        <li><a href="">Breuvages</a></li>
+                        <li><a href="">Favoris du midi</a></li>
+                    </ul>
+                </nav>
             </aside>
 
             <section class="menu__items">
