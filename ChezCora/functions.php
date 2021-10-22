@@ -77,6 +77,19 @@ function creer_menu(){
 
 add_action( 'init', 'tp1_menu', 0 );
 
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'menu'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
+
 function tp1_promotions() {
 
     $labels = array(

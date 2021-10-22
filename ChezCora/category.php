@@ -33,40 +33,28 @@
             </aside>
 
             <section class="menu__items">
-                <h2>Crêpes salées</h2>
-                <article class="item item1">
-                    <div class="img">
-                        <img src="assets/images/menu/plat1.png" alt="" />
-                    </div>
-                    <div class="contenu">
-                        <h3 class="sub__title">Crêpes</h3>
-                        <p>
-                            3 belles crêpes de farine blanche ou de farine
-                            de sarrasin-sorgho servies avec l’accompagnement
-                            de votre choix : bacon, saucisses, saucisses de
-                            dinde, jambon ou fruits frais.
-                        </p>
+                
+            <?php if (have_posts()) : ?>
+                 <h2><?php the_category(); ?></h2>
+                <?php while (have_posts()) : the_post(); ?>
+                                   
+                                    <article class="item item1">
+                                        <div class="img">
+                                            <?php the_post_thumbnail('medium'); ?>
+                                        </div>
+                                        <div class="contenu">
+                                            <h3 class="sub__title"><?php the_title(); ?></h3>
+                                            <p>
+                                                <?php the_content(); ?>
+                                            </p>
 
-                        <p>Aussi offert en portion réduite.</p>
-                    </div>
-                </article>
-                <article class="item item2">
-                    <div class="img">
-                        <img src="assets/images/menu/plat2.png" alt="" />
-                        <div class="couleur"></div>
-                    </div>
-                    <div class="contenu">
-                        <h3 class="sub__title">Favoris du grand patron</h3>
-                        <p>
-                            2 oeufs, bacon et saucisses servis sur une crêpe
-                            farcie de fromage cheddar.
-                        </p>
-                        <p>
-                            Aussi disponible en option sensible au gluten
-                            (sans saucisses).
-                        </p>
-                    </div>
-                </article>
+                                            <p>Aussi offert en portion réduite.</p>
+                                        </div>
+                                    </article>
+                                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p>Malheuresement, il n'y a pas d'items dans cette catégorie. </p>
+                <?php endif; ?>
             </section>
         </div>
 </div>
