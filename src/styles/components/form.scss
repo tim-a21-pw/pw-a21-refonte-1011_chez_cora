@@ -1,6 +1,16 @@
 .gform_heading {
     padding-top: 50px;
 }
+.gform_validation_errors {
+    margin: 0;
+    padding-top: 50px;
+}
+.gform_button button {
+    margin: 0;
+}
+.gform_footer {
+    padding-bottom: 50px;
+}
 .form {
     --input-radius: 3px;
     --input-padding: 1em;
