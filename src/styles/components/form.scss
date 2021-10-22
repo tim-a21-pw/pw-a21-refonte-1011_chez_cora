@@ -1,25 +1,3 @@
-.gform_heading {
-    padding-top: 50px !important;
-}
-.gform_wrapper.gravity-theme .gform_footer button,
-.gform_wrapper.gravity-theme .gform_footer input,
-.gform_wrapper.gravity-theme .gform_page_footer button,
-.gform_wrapper.gravity-theme .gform_page_footer input {
-    margin: 0 !important;
-}
-.gform_wrapper .gform_validation_errors {
-    margin: 0 !important;
-    padding-top: 50px !important;
-}
-.gform_confirmation_wrapper_1 {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-}
-.gform_wrapper.gravity-theme .gform_footer,
-.gform_wrapper.gravity-theme .gform_page_footer {
-    margin: 0 !important;
-    padding-bottom: 50px !important;
-}
 .form {
     --input-radius: 3px;
     --input-padding: 1em;
@@ -287,4 +265,46 @@
             color: var(--color-fail);
         }
     }
+}
+/*
+    PHP
+    ========================================================================== */
+
+.gform_wrapper.gravity-theme .gform_footer button,
+.gform_wrapper.gravity-theme .gform_footer input,
+.gform_wrapper.gravity-theme .gform_page_footer button,
+.gform_wrapper.gravity-theme .gform_page_footer input {
+    margin: 0 !important;
+    background-color: var(--color-bg-tertiary);
+    border: 0 !important;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+    color: var(--color-white);
+    &:hover {
+        background-color: var(--color-bg-quinary);
+    }
+}
+.gf_browser_chrome .gform_wrapper .gform_validation_error .gravity-theme {
+    padding-top: 50px !important;
+}
+
+.gform_confirmation_message_1 .gform_confirmation_message {
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+}
+
+.gform_wrapper.gravity-theme .gform_footer,
+.gform_wrapper.gravity-theme .gform_page_footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 50px !important;
+    padding-top: 25px !important;
+}
+.wrapper section:not(.hero),
+.wrapper footer {
+    padding-top: 50px;
+}
+.gform_confirmation_wrapper_1 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
