@@ -28,7 +28,7 @@
         <div class="menu_aside">
             <aside class="sous-menu">
                 <?php wp_nav_menu(array(
-                    'theme_location' => 'menu_principal',)
+                    'theme_location' => 'menu_menu',)
                 ); ?>
             </aside>
 

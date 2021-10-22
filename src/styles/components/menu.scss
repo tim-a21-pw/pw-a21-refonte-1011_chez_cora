@@ -2,7 +2,7 @@
     padding-bottom: var(--spacing-md);
 }
 
-.menu {
+.menu_aside {
     display: flex;
     justify-content: space-between;
     .sous-menu {
@@ -12,7 +12,7 @@
             width: 30%;
         }
 
-        .menu-menu-principal-container {
+        .menu-menu-menu-container {
             padding: 2% 0;
             background-color: var(--color-bg-secondary);
             position: sticky;
