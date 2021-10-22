@@ -98,6 +98,11 @@ header {
 
     //--------------------------------menu principal-------------------------------------//
     .menu_principal {
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
         @media screen and (max-width: $breakpoint-md) {
             display: none;
         }
