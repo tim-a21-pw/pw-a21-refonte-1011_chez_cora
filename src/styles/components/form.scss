@@ -1,18 +1,23 @@
 .gform_heading {
     padding-top: 50px;
 }
-.gform_validation_errors {
+.gform_wrapper.gravity-theme .gform_footer button,
+.gform_wrapper.gravity-theme .gform_footer input,
+.gform_wrapper.gravity-theme .gform_page_footer button,
+.gform_wrapper.gravity-theme .gform_page_footer input {
+    margin: 0;
+}
+.gform_wrapper .gform_validation_errors {
     margin: 0;
     padding-top: 50px;
-}
-.gform_button {
-    margin: 0;
-}
-.gform_footer {
-    padding-bottom: 50px;
 }
 .gform_confirmation_wrapper_1 {
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gform_wrapper.gravity-theme .gform_footer,
+.gform_wrapper.gravity-theme .gform_page_footer {
+    margin: 0;
     padding-bottom: 50px;
 }
 .form {
