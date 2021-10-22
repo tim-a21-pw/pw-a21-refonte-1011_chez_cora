@@ -80,14 +80,14 @@ add_action( 'init', 'tp1_menu', 0 );
 function tp1_promotions() {
 
     $labels = array(
-        'name'                  => _x( 'Menu', 'Post Type General Name', 'cora' ),
-        'singular_name'         => _x( 'Menu', 'Post Type Singular Name', 'cora' ),
-        'menu_name'             => __( 'Menu', 'cora' ),
+        'name'                  => _x( 'Promotions', 'Post Type General Name', 'cora' ),
+        'singular_name'         => _x( 'Promotions', 'Post Type Singular Name', 'cora' ),
+        'menu_name'             => __( 'Promotions', 'cora' ),
         'name_admin_bar'        => __( 'Post Type', 'cora' ),
         'archives'              => __( 'Item Archives', 'cora' ),
         'attributes'            => __( 'Item Attributes', 'cora' ),
         'parent_item_colon'     => __( 'Parent Item:', 'cora' ),
-        'all_items'             => __( 'Tous les Menu', 'cora' ),
+        'all_items'             => __( 'Tous les promotions', 'cora' ),
         'add_new_item'          => __( 'Ajouter un item', 'cora' ),
         'add_new'               => __( 'Ajouter un item', 'cora' ),
         'new_item'              => __( 'Nouveau item', 'cora' ),
@@ -109,8 +109,8 @@ function tp1_promotions() {
         'filter_items_list'     => __( 'Filter items list', 'cora' ),
     );
     $args = array(
-        'label'                 => __( 'Menu', 'cora' ),
-        'description'           => __( 'Menu', 'cora' ),
+        'label'                 => __( 'Promotions', 'cora' ),
+        'description'           => __( 'Promotions', 'cora' ),
         'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail' ),
         'taxonomies'            => array( 'category', 'post_tag' ),
@@ -119,7 +119,7 @@ function tp1_promotions() {
         'show_ui'               => true,
         'show_in_menu'          => true,
         'menu_position'         => 5,
-        'menu_icon'             => 'dashicons-food',
+        'menu_icon'             => 'dashicons-tag',
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
@@ -128,7 +128,7 @@ function tp1_promotions() {
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
     );
-    register_post_type( 'menu', $args );
+    register_post_type( 'Promotions', $args );
 
 }
 
