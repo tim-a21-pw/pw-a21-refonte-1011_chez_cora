@@ -199,5 +199,5 @@
                     <a href="">modalités et conditions d’utilisation</a>.
                 </p>
             </section>
-
+            </div>
             <?php get_footer(); ?>

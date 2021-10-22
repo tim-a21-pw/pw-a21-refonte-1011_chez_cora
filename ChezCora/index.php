@@ -108,5 +108,6 @@
                 </p>
             </div>
         </section>
-        <div class="wrapper">
+        </div>
+        
         <?php get_footer(); ?>

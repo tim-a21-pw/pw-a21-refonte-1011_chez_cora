@@ -117,5 +117,5 @@
                     mordus du déjeuner!
                 </p>
             </section>
-
+</div>
             <?php get_footer(); ?>

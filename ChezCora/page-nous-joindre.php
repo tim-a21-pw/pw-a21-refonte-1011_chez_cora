@@ -159,4 +159,5 @@
                     </div>
                 </form>
             </section>
+        </div>
             <?php get_footer(); ?>
