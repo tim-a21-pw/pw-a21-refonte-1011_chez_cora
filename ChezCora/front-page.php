@@ -77,12 +77,14 @@
                     </p>
                 </section>
             </div>
+        </div>
 
+        
         <section class="sectionPlatsPartager">
             <img
-                src="<?php bloginfo('template_url') ?>/assets/images/accueil/bannierre1.png"
-                alt="images des plats à partager"
-            />
+            src="<?php bloginfo('template_url') ?>/assets/images/accueil/bannierre1.png"
+            alt="images des plats à partager"
+        />
             <div class="wrapper">
                 <h2>les plats à partager</h2>
                 <p>
@@ -105,6 +107,6 @@
                     gagnant d’une carte-cadeau de 50$ chaque semaine jusqu’au
                     1er septembre 2021. Un grand prix de 250$.
                 </p>
-            </div>
+        </div>
         </section>
 <?php get_footer(); ?>
