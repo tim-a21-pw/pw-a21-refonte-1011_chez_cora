@@ -72,7 +72,7 @@
                 </p>
             </section>
             <section class="formulaire">
-                <form
+                <!-- <form
                     action=""
                     class="form"
                     autocomplete="off"
@@ -157,7 +157,8 @@
                         <h2>Merci pour votre commentaire</h2>
                         <p>Votre formulaire a bien été envoyé!</p>
                     </div>
-                </form>
+                </form> -->
+                <?php the_content(); ?>
             </section>
         </div>
             <?php get_footer(); ?>
