@@ -1,53 +1,52 @@
-<footer>
+        <footer>
                 <div class="socials">
-                    <div class="groupeicone">
-                        <div class="icones">
-                            <svg class="icon">
-                                <use xlink:href="#icon-facebook-f"></use>
-                            </svg>
-                        </div>
-                        <div class="icones">
-                            <svg class="icon">
-                                <use xlink:href="#icon-pinterest"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="groupeicone">                                                         
+                        <?php if ( have_rows('medias_sociaux', 'option') ): ?>
+                            <?php while( have_rows('medias_sociaux', 'option') ): the_row(); ?>  
+                                <div class="icones">
+                                    <?php if ( get_sub_field('type') === 'Facebook' ) : ?>
+                                        <a href="<?php the_sub_field('url'); ?>" target="_blank">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-facebook-f"></use>
+                                            </svg>
+                                        </a>
 
-                    <div class="groupeicone">
-                        <div class="icones">
-                            <svg class="icon">
-                                <use xlink:href="#icon-instagram"></use>
-                            </svg>
-                        </div>
-                        <div class="icones">
-                            <svg class="icon">
-                                <use xlink:href="#icon-courriel"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <?php if ( have_rows('tp3_medias', 'option') ): ?>
-                            <?php while( have_rows('tp3_medias', 'option') ): the_row(); ?>
-                                <?php if ( get_sub_field('tp3_medias_logo') === 'Facebook' ) : ?>
-                                    <a href="<?php the_sub_field('tp3_media_url'); ?>" target="_blank">
-                                    <img src="<?php bloginfo('template_url') ?>/assets/images/Medias2.svg" alt="logo medias" />
-                                    </a>
-
-                                <?php elseif ( get_sub_field('tp3_medias_logo') === 'Pinterest') : ?>
-                                    <a href="<?php the_sub_field('tp3_media_url'); ?>" target="_blank">
-                                    <img src="<?php bloginfo('template_url') ?>/assets/images/Medias1.svg" alt="logo medias" />
-                                    </a>
-                                <?php elseif ( get_sub_field('tp3_medias_logo') === 'Instagram') : ?>
-                                    <a href="<?php the_sub_field('tp3_media_url'); ?>" target="_blank">
-                                    <img src="<?php bloginfo('template_url') ?>/assets/images/Medias4.svg" alt="logo medias" />
-                                    </a>
-                                <?php elseif ( get_sub_field('tp3_medias_logo') === 'Courriel') : ?>
-                                    <a href="<?php the_sub_field('tp3_media_url'); ?>" target="_blank">
-                                    <img src="<?php bloginfo('template_url') ?>/assets/images/Medias3.svg" alt="logo medias" />
-                                    </a>
-                                <?php endif; ?>
+                                    <?php elseif ( get_sub_field('type') === 'Pinterest') : ?>
+                                        <a href="<?php the_sub_field('url'); ?>" target="_blank">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-pinterest"></use>
+                                            </svg>
+                                        </a>
+                                    <?php endif; ?> 
+                                </div>
                             <?php endwhile; ?>
-                    <?php endif; ?> 
-                </div>
+                        <?php endif; ?> 
+                    </div>
+
+                    <div class="groupeicone">                                                          
+                        <?php if ( have_rows('medias_sociaux_2', 'option') ): ?>
+                            <?php while( have_rows('medias_sociaux_2', 'option') ): the_row(); ?>  
+                                <div class="icones">
+                                    <?php if ( get_sub_field('type') === 'Instagram' ) : ?>
+                                        <a href="<?php the_sub_field('url'); ?>" target="_blank">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+
+                                    <?php elseif ( get_sub_field('type') === 'Courriel') : ?>
+                                        <a href="mailto: <?php the_sub_field('courriel'); ?>" target="_blank">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-courriel"></use>
+                                            </svg>
+                                        </a>
+                                    <?php endif; ?> 
+                                </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?> 
+                    </div>
+                </div>            
+
                 <nav>
 
                     <?php wp_nav_menu(array(
@@ -69,8 +68,6 @@
                     réservés.
                 </p>
             </section>
-        </div>
-
         <?php wp_footer(); ?>
     </body>
 </html>

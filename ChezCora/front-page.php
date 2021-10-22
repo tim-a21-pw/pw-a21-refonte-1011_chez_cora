@@ -77,7 +77,6 @@
                     </p>
                 </section>
             </div>
-        </div>
 
         <section class="sectionPlatsPartager">
             <img
@@ -108,5 +107,4 @@
                 </p>
             </div>
         </section>
-        <div class="wrapper">
-        <?php get_footer(); ?>
+<?php get_footer(); ?>
