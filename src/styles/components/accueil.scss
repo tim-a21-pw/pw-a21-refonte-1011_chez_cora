@@ -55,8 +55,12 @@
     background-color: var(--color-bg-quaternary);
 
     img {
-        width: 100%;
+        width: 80%;
         margin-left: auto;
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+        }
     }
     .wrapper {
         padding: 0 var(--spacing-lg);
@@ -70,6 +74,7 @@
         }
     }
 }
+
 .sectionConcours {
     background-color: var(--color-bg-secondary);
 }
