@@ -38,7 +38,7 @@
                  <h2><?php the_category(); ?></h2>
                 <?php while (have_posts()) : the_post(); ?>
                                    
-                                    <article class="item item1">
+                                    <article class="item">
                                         <div class="img">
                                             <?php the_post_thumbnail('medium'); ?>
                                         </div>

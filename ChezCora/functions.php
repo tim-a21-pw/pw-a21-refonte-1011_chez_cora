@@ -163,3 +163,14 @@ if ( function_exists('acf_add_options_page') ) {
     'parent_slug' => 'cw4-theme-options',
     ));
     }
+
+    function nd_dosth_theme_setup() {
+
+        // Add <title> tag support
+        add_theme_support( 'title-tag' );  
+    
+        // Add custom-logo support
+        add_theme_support( 'custom-logo' );
+        
+    }
+    add_action( 'after_setup_theme', 'nd_dosth_theme_setup');
