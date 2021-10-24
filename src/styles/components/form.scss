@@ -300,11 +300,11 @@
     padding-bottom: 50px !important;
     padding-top: 25px !important;
 }
-.wrapper section:not(.hero),
-.wrapper footer {
-    padding-top: 50px;
-}
 .gform_confirmation_wrapper_1 {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+}
+
+.gform_title {
+    padding-top: var(--spacing-md);
 }

@@ -1,50 +1,35 @@
 <?php get_header(); ?>
 
         <div class="wrapper">
-            <section class="hero">
-                <div
-                    class="swiper-container swiper--artistesVedettes"
-                    data-component="Carousel"
-                >
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
-                                alt="Un artiste"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
-                                alt="Un artiste"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
-                                alt="Un artiste"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
-                                alt="Un artiste"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
-                                alt="Un artiste"
-                            />
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <h1>
-                        Carte <br />
-                        de fidélité
-                    </h1>
+        <section class="hero hero__menu">
+            <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
+                <div class="swiper-wrapper">
+                    <?php
+                        query_posts(array(
+                        'post_type' => 'Promotions',
+                        'post_status' => 'publish',
+                        'showposts' => 4
+                        ));
+                    ?>
+
+                    <?php while (have_posts()) : the_post(); ?>
+                        <?php if (get_field('image_de_promotion')) : ?>
+                            <!-- <a href="">
+                            Page IMDB
+                            </a> -->
+                            <div class="swiper-slide">
+                                <img src="<?php the_field('image_de_promotion'); ?>" alt="">
+                            </div>
+                        <?php endif; ?>
+                        
+                    <?php endwhile; ?>
+
+                    <?php wp_reset_query(); ?>
                 </div>
-            </section>
+                <div class="swiper-pagination"></div>
+                <h1>Carte de fidélité</h1>
+            </div>
+        </section>
             <section class="subTittle categorie-fidelite">
                 <nav>
                     <ul>

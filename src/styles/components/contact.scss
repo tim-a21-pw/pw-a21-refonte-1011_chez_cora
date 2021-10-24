@@ -1,19 +1,18 @@
-.desir {
-    padding: var(--spacing-lg) 0;
-    padding-top: 0;
-    font-size: var(--font-size-content);
-}
-
 .commentaires,
 .internet,
 .ecrire {
     h3 {
-        padding: 0 0 var(--spacing-sm) 0;
+        padding: var(--spacing-lg) 0 var(--spacing-sm) 0;
     }
 
     p {
         padding-bottom: var(--spacing-lg);
     }
+}
+
+.desir {
+    padding: var(--spacing-lg) 0;
+    font-size: var(--font-size-content);
 }
 
 .ecrire {

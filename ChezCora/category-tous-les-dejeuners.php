@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="wrapper">
-        <section class="hero hero__menu">
+<section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
                 <div class="swiper-wrapper">
                     <?php
@@ -27,7 +27,7 @@
                     <?php wp_reset_query(); ?>
                 </div>
                 <div class="swiper-pagination"></div>
-                <h1>Menu</h1>
+                <h1>Tous les déjeuners</h1>
             </div>
         </section>
 
@@ -41,7 +41,7 @@
             <section class="menu__items">
                 
             <?php if (have_posts()) : ?>
-                 <h2><?php the_category(); ?></h2>
+                 <h2>Tous les déjeuners</h2>
                 <?php while (have_posts()) : the_post(); ?>               
                     <article class="item">
                         <div class="img">

@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accueil - Cora</title>
+        <title><?php bloginfo('name') ?> <?php wp_title() ?>
+        </title>
         <link
             rel="shortcut icon"
             type="image/jpg"

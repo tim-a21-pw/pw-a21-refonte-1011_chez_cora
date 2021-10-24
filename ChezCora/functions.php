@@ -93,7 +93,7 @@ function query_post_type($query) {
 function tp1_promotions() {
 
     $labels = array(
-        'name'                  => _x( 'Promotions', 'Post Type General Name', 'cora' ),
+        'name'                  => _x( 'Promotions (max 4)', 'Post Type General Name', 'cora' ),
         'singular_name'         => _x( 'Promotions', 'Post Type Singular Name', 'cora' ),
         'menu_name'             => __( 'Promotions', 'cora' ),
         'name_admin_bar'        => __( 'Post Type', 'cora' ),
