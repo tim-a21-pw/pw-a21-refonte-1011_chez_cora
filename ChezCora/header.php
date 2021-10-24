@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accueil - Cora</title>
+        <title><?php bloginfo('name') ?> <?php wp_title() ?>
+        </title>
         <link
             rel="shortcut icon"
             type="image/jpg"
@@ -19,13 +20,13 @@
     <body <?php body_class(); ?>> 
         <header class="header" data-component="Header">
             <aside class="menu_principal">
-                <a href="index.html">
-                    <img
-                        class="logoSite"
-                        src="<?php bloginfo('template_url') ?>/assets/images/logo-chez-cora-dejeuners-diners 1.png"
-                        alt=""
-                    />
-                </a>
+                
+                <?php if ( function_exists( 'the_custom_logo' ) ): ?>
+                    <a href="index.html">
+                        <?php the_custom_logo(); ?>
+                    </a>
+                <?php endif; ?>  
+               
 
                 <?php wp_nav_menu(array(
                     'theme_location' => 'menu_principal',)

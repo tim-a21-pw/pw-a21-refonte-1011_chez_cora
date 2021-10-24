@@ -58,13 +58,35 @@
                     alt="images de cartes-cadeaux"
                 />
             </section>
+        <section class="hero hero__menu">
+            <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
+                <div class="swiper-wrapper">
+                    <?php
+                        query_posts(array(
+                        'post_type' => 'Promotions',
+                        'post_status' => 'publish',
+                        'showposts' => 4
+                        ));
+                    ?>
 
-            <section class="introductionCarte">
-                <h2 class="subTitle">
-                    Vous pouvez vérifier le solde de votre carte-cadeau
-                </h2>
-                <p>À l’adresse chezcora.com/soldecarte</p>
-            </section>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <?php if (get_field('image_de_promotion')) : ?>
+                            <!-- <a href="">
+                            Page IMDB
+                            </a> -->
+                            <div class="swiper-slide">
+                                <img src="<?php the_field('image_de_promotion'); ?>" alt="">
+                            </div>
+                        <?php endif; ?>
+                        
+                    <?php endwhile; ?>
+
+                    <?php wp_reset_query(); ?>
+                </div>
+                <div class="swiper-pagination"></div>
+                <h1>Une idée-cadeau qui a du goût!</h1>
+            </div>
+        </section>
 
             <div class="infoCarteCadeau">
                 <section class="section__carte">
@@ -117,5 +139,5 @@
                     mordus du déjeuner!
                 </p>
             </section>
-
+</div>
             <?php get_footer(); ?>

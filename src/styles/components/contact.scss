@@ -1,8 +1,3 @@
-.desir {
-    padding: var(--spacing-lg) 0;
-    font-size: var(--font-size-content);
-}
-
 .commentaires,
 .internet,
 .ecrire {
@@ -13,6 +8,11 @@
     p {
         padding-bottom: var(--spacing-lg);
     }
+}
+
+.desir {
+    padding: var(--spacing-lg) 0;
+    font-size: var(--font-size-content);
 }
 
 .ecrire {
