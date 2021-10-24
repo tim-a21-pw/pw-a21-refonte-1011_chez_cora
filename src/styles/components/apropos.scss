@@ -41,6 +41,7 @@
 .fondation {
     background-color: var(--color-bg-quaternary);
     color: var(--color-white);
+    padding-bottom: 50px !important;
     h2,
     h3,
     a {
@@ -49,13 +50,10 @@
     h2 {
         padding-top: 50px;
     }
-    h3{
+    h3 {
         padding-top: 25px;
     }
     p {
         padding-top: 25px;
-    }
-    ul{
-        padding-bottom: 50px;
     }
 }
