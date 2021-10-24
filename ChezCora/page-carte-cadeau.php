@@ -9,31 +9,31 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img
-                                src="assets/images/accueil/Hero.png"
+                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
                                 alt="Un artiste"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="assets/images/accueil/Hero.png"
+                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
                                 alt="Un artiste"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="assets/images/accueil/Hero.png"
+                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
                                 alt="Un artiste"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="assets/images/accueil/Hero.png"
+                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
                                 alt="Un artiste"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="assets/images/accueil/Hero.png"
+                                src="<?php bloginfo('template_url') ?>/assets/images/accueil/Hero.png"
                                 alt="Un artiste"
                             />
                         </div>
@@ -54,7 +54,7 @@
                     </li>
                 </ul>
                 <img
-                    src="assets/images/carteCadeaux/CartesCadeaux.png"
+                    src="<?php bloginfo('template_url') ?>/assets/images/carteCadeaux/CartesCadeaux.png"
                     alt="images de cartes-cadeaux"
                 />
             </section>
