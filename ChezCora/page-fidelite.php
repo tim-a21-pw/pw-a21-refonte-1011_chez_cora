@@ -72,7 +72,107 @@
                     </ul>
                 </nav>
             </section>
-            <section class="introductionFidelite">
+
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php if( have_rows('pw_fidelite_blocs') ): ?>
+                        <?php while( have_rows('pw_fidelite_blocs') ): the_row(); ?>
+
+                            <?php if (get_row_layout() == 'pw_intro_fidelite'): ?>
+                                <section class="introductionFidelite">
+                                        <p>
+                                            <?php if ( get_sub_field('pw_intro_texte_fidelite') ) : ?>
+                                                <?php the_sub_field('pw_intro_texte_fidelite'); ?>
+                                            <?php endif; ?>
+                                        </p>
+                                </section>
+                            <?php endif; ?>
+
+                            <?php if (get_row_layout() == 'pw_information_gen_fidelite'): ?>
+                                <section class="infoCarte">
+                                    <?php if( have_rows('pw_paragraphe_info_gen_fidelite') ): ?>
+                                        <?php while( have_rows('pw_paragraphe_info_gen_fidelite') ): the_row(); ?>
+                                            <?php if ( get_sub_field('pw_titre_info_gen_fidelite') ) : ?>
+                                                <h3 class="sub__title">
+                                                    <?php the_sub_field('pw_titre_info_gen_fidelite'); ?>
+                                                </h3>
+                                            <?php endif; ?>
+                                            <?php if ( get_sub_field('pw_texte_info_gen_fidelite') ) : ?>
+                                                <p>
+                                                    <?php the_sub_field('pw_texte_info_gen_fidelite'); ?>
+                                                </p>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </section>
+                            <?php endif; ?>
+
+                            <?php if (get_row_layout() == 'pw_foire_aux_questions_fidelite'): ?>
+                                <section class="questionCarte">
+                                    <h2 class="subTitle">
+                                        <?php if ( get_sub_field('pw_titre_faq_fidelite') ) : ?>
+                                            <?php the_sub_field('pw_titre_faq_fidelite'); ?>
+                                        <?php endif; ?>
+                                    </h2>
+
+                                    <?php if( have_rows('pw_paragraphe_faq_fidelite') ): ?>
+                                        <?php while( have_rows('pw_paragraphe_faq_fidelite') ): the_row(); ?>
+                                            <?php if ( get_sub_field('pw_titre_paragraphe_faq_fidelite') ) : ?>
+                                                <h3 class="sub__title">
+                                                    <?php the_sub_field('pw_titre_paragraphe_faq_fidelite'); ?>
+                                                </h3>
+                                            <?php endif; ?>
+                                            <?php if ( get_sub_field('pw_texte_paragraphe_faq_fidelite') ) : ?>
+                                                <p>
+                                                    <?php the_sub_field('pw_texte_paragraphe_faq_fidelite'); ?>
+                                                </p>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </section>
+                            <?php endif; ?>
+
+                            <?php if (get_row_layout() == 'pw_problemes_fidelite'): ?>
+                                <section class="problemesCarte">
+                                    <h2 class="subTitle">
+                                        <?php if ( get_sub_field('pw_titre_probleme_fidelite') ) : ?>
+                                            <?php the_sub_field('pw_titre_probleme_fidelite'); ?>
+                                        <?php endif; ?>
+                                    </h2>
+
+                                    <?php if( have_rows('pw_paragraphe_probleme_fidelite') ): ?>
+                                        <?php while( have_rows('pw_paragraphe_probleme_fidelite') ): the_row(); ?>
+                                            <?php if ( get_sub_field('pw_texte_probleme_fidelite') ) : ?>
+                                                <p>
+                                                    <?php the_sub_field('pw_texte_probleme_fidelite'); ?>
+                                                </p>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </section>
+                            <?php endif; ?>
+
+                            <?php if (get_row_layout() == 'pw_conditions_dutilisation_fidelite'): ?>
+                                <section class="conditionsCarte">
+                                    <h3 class="sub__title">
+                                        <?php if ( get_sub_field('pw_titre_conditions_fidelite') ) : ?>
+                                            <?php the_sub_field('pw_titre_conditions_fidelite'); ?>
+                                        <?php endif; ?>
+                                    </h3>
+                                    <p>
+                                        <?php if ( get_sub_field('pw_texte_conditions_fidelite') ) : ?>
+                                            <?php the_sub_field('pw_texte_conditions_fidelite'); ?>
+                                        <?php endif; ?>
+                                    </p>
+                                </section>
+                            <?php endif; ?>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+            <!-- <section class="introductionFidelite">
                 <p>
                     La carte fidélité Cora est un moyen simple et savoureux
                     d’obtenir des points et récompenses. Demandez votre carte
@@ -184,5 +284,5 @@
                     <a href="">modalités et conditions d’utilisation</a>.
                 </p>
             </section>
-            </div>
+            </div> -->
             <?php get_footer(); ?>
