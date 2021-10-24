@@ -34,40 +34,20 @@
                 <nav>
                     <ul>
                         <div class="section1">
-                            <li>
-                                <a href="fidelite.html#compte"
-                                    >Accéder à votre compte</a
-                                >
-                            </li>
+                            <li>Accéder à votre compte</li>
                             <li><div></div></li>
-                            <li><a href="">Enregistrer votre carte</a></li>
+                            <li>Enregistrer votre carte</li>
                             <li><div></div></li>
-                            <li>
-                                <a href="fidelite.html#completer"
-                                    >Compléter votre profil</a
-                                >
-                            </li>
+                            <li>Compléter votre profil</li>
                             <li><div></div></li>
-                            <li>
-                                <a href="fidelite.html#obtenir"
-                                    >Obtenir et utiliser votre carte</a
-                                >
-                            </li>
+                            <li>Obtenir et utiliser votre carte</li>
                         </div>
 
                         <div class="section2">
                             <li class="tiretMobile"><div></div></li>
-                            <li>
-                                <a href="fidelite.html#question"
-                                    >Foire aux questions</a
-                                >
-                            </li>
+                            <li>Foire aux questions</li>
                             <li><div></div></li>
-                            <li>
-                                <a href="fidelite.html#condition"
-                                    >Conditions d'utilisations</a
-                                >
-                            </li>
+                            <li>Conditions d'utilisations</li>
                         </div>
                     </ul>
                 </nav>
