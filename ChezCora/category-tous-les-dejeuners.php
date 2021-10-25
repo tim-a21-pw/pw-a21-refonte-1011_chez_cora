@@ -27,7 +27,7 @@
                     <?php wp_reset_query(); ?>
                 </div>
                 <div class="swiper-pagination"></div>
-                <h1>Tous les déjeuners</h1>
+                <h1>Menu</h1>
             </div>
         </section>
 

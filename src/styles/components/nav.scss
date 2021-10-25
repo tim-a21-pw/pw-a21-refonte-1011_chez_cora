@@ -185,11 +185,7 @@ header {
                 }
 
                 @media screen and (max-width: $breakpoint-sm) {
-                    width: 25%;
-                }
-
-                @media screen and (max-width: $breakpoint-xs) {
-                    width: 50%;
+                    width: 100%;
                 }
             }
 

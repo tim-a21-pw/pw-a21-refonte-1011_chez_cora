@@ -1,6 +1,6 @@
 export default class Icons {
   static load(path) {
-    path = path || '/cours/pw/tp1/wp-content/themes/ChezCora/assets/icons.svg';
+    path = path || '/assets/icons.svg';
     fetch(path)
       .then((res) => {
         return res.text();

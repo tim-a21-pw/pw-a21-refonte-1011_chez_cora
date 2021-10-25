@@ -54,20 +54,20 @@
                             'theme_location' => 'menu_footer',)
                         ); ?>
 
-                        <p class="copyright">
-                            ᴹᴰ Marque déposée de Coramark inc. Copyright 2011 -
-                            2021, Coramark inc. Chez Cora : Déjeuners et dîners.
-                            Tous droits réservés.
-                        </p>
+                        <?php if ( get_field('copyright', 'options') ) : ?>
+                            <p class="copyright">
+                                <?php the_field('copyright', 'options'); ?>
+                            </p>
+                        <?php endif; ?>
                     </nav>
                 </footer>
 
                 <section class="footer--mobile">
-                    <p class="copyright--mobile">
-                        ᴹᴰ Marque déposée de Coramark inc. Copyright 2011 - 2021,
-                        Coramark inc. Chez Cora : Déjeuners et dîners. Tous droits
-                        réservés.
-                    </p>
+                    <?php if ( get_field('copyright', 'options') ) : ?>
+                        <p class="copyright--mobile">
+                            <?php the_field('copyright', 'options'); ?>
+                        </p>
+                    <?php endif; ?>
                 </section>
             </div>  
         <?php wp_footer(); ?>
