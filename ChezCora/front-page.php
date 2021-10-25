@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-        <div class="wrapper">
+    <div class="wrapper accueil">
             <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
                 <div class="swiper-wrapper">
@@ -25,7 +25,9 @@
                              
                         <?php endif; ?>
                         
-                    <?php endwhile; ?>                    
+                    <?php endwhile; ?>    
+                    
+                    <?php wp_reset_query(); ?>
                 </div>
                 <div class="swiper-pagination"></div>
                 <h1>Accueil</h1>
@@ -33,69 +35,31 @@
             
         </section>
 
-            <section class="subTittle">
-                <p>
-                    Nous servons plus de 250 000 petits déjeuners chaque
-                    semaines à travers le pays. Venez, vous aussi, déjeuner avec
-                    votre sourire chez Cora.
-                </p>
-            </section>
-            <div class="divTop">
-                <section class="sectionCassolettes">
-                    <img
-                        src="<?php bloginfo('template_url') ?>/assets/images/accueil/Cassolettes.png"
-                        alt="images des assiettes de cassolettes"
-                    />
-                    <h2>Nos cassolettes voyagent jusqu'à vous!</h2>
-                    <p>
-                        Laissez-vous tenter par l'une de nos réconfortantes
-                        cassolettes, partout, tout le temps!
-                    </p>
-                </section>
-
-                <section class="sectionFavorisAdos">
-                    <img
-                        src="<?php bloginfo('template_url') ?>/assets/images/accueil/FavorisDesAdos.png"
-                        alt="images des assiettes de cassolettes"
-                    />
-                    <h2>Favoris des ados</h2>
-                    <p>
-                        Les ados de tous âges raffolent de ces classiques
-                        réinventés, conçus spécialement pour les appétits
-                        délinquants.
-                    </p>
-                </section>
-            </div>
-        </div>
-
-        
-        <section class="sectionPlatsPartager">
-            <img
-            src="<?php bloginfo('template_url') ?>/assets/images/accueil/bannierre1.png"
-            alt="images des plats à partager"
-        />
-            <div class="wrapper">
-                <h2>les plats à partager</h2>
-                <p>
-                    Laissez-vous tenter par l'une de nos réconfortantes
-                    cassolettes, partout, tout le temps!
-                </p>
-            </div>
+        <section class="subTittle">
+            <p>
+                <?php the_content(); ?>
+            </p>
         </section>
-        <section class="sectionConcours">
-            <img
-                src="<?php bloginfo('template_url') ?>/assets/images/accueil/bannierre2.png"
-                alt="images des concours"
-            />
-            <div class="wrapper">
-                <h2>Concours Cora tout l’été</h2>
-                <p>
-                    Chaque semaine nous vous présenterons quatre endroits
-                    inspirants où savourer un délicieux déjeuner Cora! Votez
-                    pour votre endroit favori et courez la chance de gagner! Un
-                    gagnant d’une carte-cadeau de 50$ chaque semaine jusqu’au
-                    1er septembre 2021. Un grand prix de 250$.
-                </p>
+
+        <?php
+            query_posts(array(
+            'post_type' => 'Promotions',
+            'post_status' => 'publish',
+            'order' => 'ASC',
+            'showposts' => 4
+            ));
+        ?>
+
+        <div class="accueil_promotions">
+            <?php while (have_posts()) : the_post(); ?>
+                <section>
+                    <?php the_post_thumbnail(); ?>
+
+                    <h2><?php the_title(); ?></h2>
+
+                    <p><?php the_content(); ?></p>
+                </section>
+            <?php endwhile; ?>  
         </div>
-        </section>
+    </div>
 <?php get_footer(); ?>

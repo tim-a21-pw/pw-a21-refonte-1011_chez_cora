@@ -45,7 +45,7 @@
                 <?php while (have_posts()) : the_post(); ?>               
                     <article class="item">
                         <div class="img">
-                            <?php the_post_thumbnail('medium'); ?>
+                            <?php the_post_thumbnail(); ?>
                         </div>
                         <div class="contenu">
                             <h3 class="sub__title"><?php the_title(); ?></h3>
@@ -63,4 +63,12 @@
             </section>
         </div>
 </div>
+
+<?php
+    query_posts(array(
+    'post_type' => 'Promotions',
+    'post_status' => 'publish',
+    'showposts' => 4
+    ));
+?>
 <?php get_footer(); ?>
