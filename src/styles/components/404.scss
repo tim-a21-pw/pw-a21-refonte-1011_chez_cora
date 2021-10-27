@@ -1,0 +1,22 @@
+.text-page-erreur {
+    font-size: 31rem;
+    padding: 195px 0;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        padding: var(--spacing-xl) 0;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding: var(--spacing-lg) 0;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 20rem;
+        padding: var(--spacing-xl) 0;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: 12rem;
+        padding: var(--spacing-lg) 0;
+    }
+}
