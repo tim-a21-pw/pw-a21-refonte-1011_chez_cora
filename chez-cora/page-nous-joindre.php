@@ -27,8 +27,8 @@
                 <h1>Communiquez avec nous</h1>
             </div>
         </section>
-            <section class="subTittle">
-                <h2 class="sub__title desir">
+            <section class="subTittle desir">
+                <h2 class="sub__title">
                     Notre désir est de vous offrir une expérience sans pareille.
                 </h2>
             </section>

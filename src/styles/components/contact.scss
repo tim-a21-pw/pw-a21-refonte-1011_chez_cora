@@ -21,8 +21,11 @@
 }
 
 .desir {
-    padding: var(--spacing-lg) 0;
     font-size: var(--font-size-content);
+    background-color: var(--color-bg-secondary);
+    h2 {
+        padding: 50px 0;
+    }
 }
 
 .ecrire {
@@ -44,4 +47,8 @@
     .form {
         padding: var(--spacing-lg) 0;
     }
+}
+.wpgmza_map {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
