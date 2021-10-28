@@ -39,9 +39,9 @@
             </p>
         </section>
 
-        <div class="accueil_promotions">
+        <section class="page-contenu">
             <?php the_content(); ?>
-        </div>
+        </section>
     </div>
     
 <?php get_footer(); ?>
