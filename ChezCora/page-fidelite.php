@@ -14,9 +14,6 @@
 
                 <?php while (have_posts()) : the_post(); ?>
                     <?php if (get_field('image_de_promotion')) : ?>
-                        <!-- <a href="">
-                        Page IMDB
-                        </a> -->
                         <div class="swiper-slide">
                             <img src="<?php the_field('image_de_promotion'); ?>" alt="">
                         </div>

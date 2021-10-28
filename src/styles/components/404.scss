@@ -1,6 +1,5 @@
 .text-page-erreur {
-    font-size: 31rem;
-    padding: 195px 0;
+    font-size: 15rem;
 
     @media screen and (max-width: $breakpoint-lg) {
         padding: var(--spacing-xl) 0;
@@ -19,4 +18,9 @@
         font-size: 12rem;
         padding: var(--spacing-lg) 0;
     }
+}
+.revenir {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    background-color: var(--color-bg-secondary);
 }
