@@ -11,6 +11,8 @@ function creer_menu(){
     'menu_footer' => 'Menu footer',                    
  ));
 
+ add_post_type_support( 'page', 'excerpt' );
+
  function tp1_menu() {
 
     $labels = array(

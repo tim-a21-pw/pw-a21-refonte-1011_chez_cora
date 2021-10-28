@@ -19,8 +19,6 @@
                             </a> -->
                             <div class="swiper-slide">
                                 <img src="<?php the_field('image_de_promotion'); ?>" alt="">
-                                
-                                <h2><?php the_title(); ?></h2>
                             </div>
                              
                         <?php endif; ?>

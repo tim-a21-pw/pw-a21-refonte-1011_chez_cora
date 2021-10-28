@@ -71,11 +71,11 @@
                 </div>
 
                 <nav class="mobileModal">
-                    <a href="index.html"
-                        ><img
-                            src="<?php bloginfo('template_url') ?>/assets/images/logo-chez-cora-dejeuners-diners 1.png"
-                            alt=""
-                    /></a>
+                    <?php if ( function_exists( 'the_custom_logo' ) ): ?>
+                        <a href="index.html">
+                            <?php the_custom_logo(); ?>
+                        </a>
+                    <?php endif; ?>  
                     <?php wp_nav_menu(array(
                         'theme_location' => 'menu_principal',)
                     ); ?>
