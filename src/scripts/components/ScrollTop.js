@@ -17,8 +17,6 @@ export default class ScrollTop {
 
     this.scrollButton = document.querySelector('#IconeScroll');
     this.scrollButton.addEventListener('click', this.scrollId.bind(this));
-    this.intervalId = setInterval(this.scrollStep.bind(this), 16.66);
-  }
   }
 
   scrollStep() {
@@ -39,5 +37,6 @@ export default class ScrollTop {
   }
 
   scrollToTop() {
-    
+    this.intervalId = setInterval(this.scrollStep.bind(this), 16.66);
+  }
 }
