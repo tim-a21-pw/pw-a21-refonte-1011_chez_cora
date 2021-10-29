@@ -13,30 +13,11 @@ export default class ScrollTop {
    * Méthode d'initialisation
    */
   init() {
-    console.log('Nouvelle instance de la composante -> ScrollTop');
-
     this.scrollButton = document.querySelector('#IconeScroll');
-    this.scrollButton.addEventListener('click', this.scrollId.bind(this));
+    this.scrollButton.addEventListener('click', this.scrollStep.bind(this));
   }
 
   scrollStep() {
-    if (window.pageYOffset === 0) {
-      clearInterval(intervalId);
-    }
-    window.scroll(0, window.pageYOffset - 50);
-  }
-
-  scrollId(evt) {
-    var cible = evt.currentTarget.getAttribute('class');
-
-    window.scroll({
-      top: destination,
-      left: 0,
-      behavior: 'smooth',
-    });
-  }
-
-  scrollToTop() {
-    this.intervalId = setInterval(this.scrollStep.bind(this), 16.66);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
