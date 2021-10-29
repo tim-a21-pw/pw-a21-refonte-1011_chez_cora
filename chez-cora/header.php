@@ -41,17 +41,13 @@
                 </div>
 
                 <div class="trouver_restaurant">
-                    <p>
-                        Trouver un <br />
-                        restaurant
-                    </p>
-                    <a href="">
+                    <a href="https://alanglois.dectim.ca/cours/pw/tp1/nous-joindre/#wpgmza_map">
                         <button>
                             <svg class="icon icon--lg icon--carte">
                                 <use xlink:href="#icon-carte"></use>
                             </svg>
                             <p class="coordonnerU">
-                                Province/Ville/Code postal
+                                Trouver un restaurant
                             </p>
                             <svg class="icon icon--xs">
                                 <use xlink:href="#icon-fleche"></use>
