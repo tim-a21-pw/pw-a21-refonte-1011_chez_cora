@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="wrapper">
+<div class="wrapper" data-component="Scrolly">
     <button class="btnCommander">Commander</button>
     <section class="hero hero__menu">
         <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                 <?php
                     query_posts(array(
                     'post_type' => 'Promotions',
@@ -28,7 +28,7 @@
             <h1>Carte de fidélité</h1>
         </div>
     </section>
-    <section class="subTittle categorie-fidelite">
+    <section class="subTittle categorie-fidelite" data-scrolly="FlipfromBottom">
         <nav>
             <ul>
                 <div class="section1">
@@ -57,7 +57,7 @@
                 <?php while( have_rows('pw_fidelite_blocs') ): the_row(); ?>
 
                     <?php if (get_row_layout() == 'pw_intro_fidelite'): ?>
-                        <section class="introductionFidelite">
+                        <section class="introductionFidelite" data-scrolly="FlipfromBottom">
                                 <p>
                                     <?php if ( get_sub_field('pw_intro_texte_fidelite') ) : ?>
                                         <?php the_sub_field('pw_intro_texte_fidelite'); ?>
@@ -67,7 +67,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_information_gen_fidelite'): ?>
-                        <section class="infoCarte">
+                        <section class="infoCarte" data-scrolly="FlipfromBottom">
                             <?php if( have_rows('pw_paragraphe_info_gen_fidelite') ): ?>
                                 <?php while( have_rows('pw_paragraphe_info_gen_fidelite') ): the_row(); ?>
                                     <?php if ( get_sub_field('pw_titre_info_gen_fidelite') ) : ?>
@@ -86,7 +86,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_foire_aux_questions_fidelite'): ?>
-                        <section class="questionCarte">
+                        <section class="questionCarte" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_faq_fidelite') ) : ?>
                                     <?php the_sub_field('pw_titre_faq_fidelite'); ?>
@@ -111,7 +111,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_problemes_fidelite'): ?>
-                        <section class="problemesCarte">
+                        <section class="problemesCarte" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_probleme_fidelite') ) : ?>
                                     <?php the_sub_field('pw_titre_probleme_fidelite'); ?>
@@ -131,7 +131,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_conditions_dutilisation_fidelite'): ?>
-                        <section class="conditionsCarte">
+                        <section class="conditionsCarte" data-scrolly="FlipfromBottom">
                             <h3 class="sub__title">
                                 <?php if ( get_sub_field('pw_titre_conditions_fidelite') ) : ?>
                                     <?php the_sub_field('pw_titre_conditions_fidelite'); ?>

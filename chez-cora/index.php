@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="wrapper accueil">
+    <div class="wrapper accueil" data-component="Scrolly">
         <button class="btnCommander">Commander</button>
         <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                     <?php
                         query_posts(array(
                         'post_type' => 'Promotions',
@@ -34,7 +34,7 @@
             
         </section>
 
-        <section class="subTittle">
+        <section class="subTittle" data-scrolly="FlipfromBottom">
             <p>
                 <?php the_content(); ?>
             </p>
@@ -49,7 +49,7 @@
             ));
         ?>
 
-        <div class="accueil_promotions">
+        <div class="accueil_promotions" data-scrolly="FlipfromBottom">
             <?php while (have_posts()) : the_post(); ?>
                 <section>
                     <?php the_post_thumbnail(); ?>

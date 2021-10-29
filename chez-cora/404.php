@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-    <div class="wrapper">
+    <div class="wrapper" data-component="Scrolly">
         <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                     <?php
                         query_posts(array(
                         'post_type' => 'Promotions',
@@ -27,7 +27,7 @@
             </div>
         </section>
 
-        <section>
+        <section data-scrolly="FlipfromBottom">
             <p>Désolé, mauvaise page</p>
             <h1 class="text-page-erreur">404</h1>
         </section>

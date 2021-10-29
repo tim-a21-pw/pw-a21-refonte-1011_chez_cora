@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="wrapper">
+    <div class="wrapper" data-component="Scrolly">
         <button class="btnCommander">Commander</button>
         <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                     <?php
                         query_posts(array(
                         'post_type' => 'Promotions',
@@ -32,15 +32,14 @@
             </div>
         </section>
 
-        <div class="menu_aside">
-            <aside class="sous-menu">
+        <div class="menu_aside" >
+            <aside class="sous-menu" data-scrolly="FlipfromBottom">
                 <?php wp_nav_menu(array(
                     'theme_location' => 'menu_menu',)
                 ); ?>
             </aside>
 
-            <section class="menu__items">
-                
+            <section class="menu__items" data-scrolly="FlipfromBottom">
             <?php if (have_posts()) : ?>
                  <h2>Tous les déjeuners</h2>
                 <?php while (have_posts()) : the_post(); ?>               

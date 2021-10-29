@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="wrapper">
+    <div class="wrapper" data-component="Scrolly">
         <button class="btnCommander">Commander</button>
         <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                     <?php
                         query_posts(array(
                         'post_type' => 'Promotions',
@@ -28,12 +28,12 @@
                 <h1>Communiquez avec nous</h1>
             </div>
         </section>
-            <section class="subTittle desir">
+            <section class="subTittle desir" data-scrolly="FlipfromBottom">
                 <h2 class="sub__title">
                     Notre désir est de vous offrir une expérience sans pareille.
                 </h2>
             </section>
-            <section class="commentaires">
+            <section class="commentaires" data-scrolly="FlipfromBottom">
                 <h3 class="sub__title">
                     Vous aimeriez nous faire part de vos commentaires?
                 </h3>
@@ -46,7 +46,7 @@
                         <?php while( have_rows('pw_contact_blocs') ): the_row(); ?>
 
                             <?php if (get_row_layout() == 'pw_nous_ecrire'): ?>
-                                <section class="ecrire">
+                                <section class="ecrire" data-scrolly="FlipfromBottom">
                                     <h3 class="sub__title">
                                         <?php if ( get_sub_field('pw_titre_nous_ecrire') ) : ?>
                                             <?php the_sub_field('pw_titre_nous_ecrire'); ?>
@@ -81,7 +81,7 @@
                             <?php endif; ?>
 
                             <?php if (get_row_layout() == 'pw_contact_internet'): ?>
-                                <section class="internet">
+                                <section class="internet" data-scrolly="FlipfromBottom">
                                     <h3 class="sub__title">
                                         <?php if ( get_sub_field('pw_titre_contact_internet') ) : ?>
                                             <?php the_sub_field('pw_titre_contact_internet'); ?>

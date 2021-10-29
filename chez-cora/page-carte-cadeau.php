@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="wrapper">
+<div class="wrapper" data-component="Scrolly">
     <button class="btnCommander">Commander</button>            
     <section class="hero hero__menu">
         <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                 <?php
                     query_posts(array(
                     'post_type' => 'Promotions',
@@ -36,7 +36,7 @@
         <?php the_content(); ?>
     </section>
 
-    <div class="infoCarteCadeau">
+    <div class="infoCarteCadeau" data-scrolly="FlipfromBottom">
         <?php if( have_rows('information_carte_cadeau') ): ?>
             <?php while( have_rows('information_carte_cadeau') ): the_row(); ?>
                 <section class="section__carte">
@@ -58,7 +58,7 @@
         <?php endif; ?>
     </div>
 
-    <section class="section__rdv">
+    <section class="section__rdv" data-scrolly="FlipfromBottom">
         <?php if ( get_field('rendez-vous') ) : ?>
             <p class="infoCarteCadeau__rdv">
                 <?php the_field('rendez-vous'); ?></h2>

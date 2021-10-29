@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="wrapper">
+<div class="wrapper" data-component="Scrolly">
     <button class="btnCommander">Commander</button>
     <section class="hero hero__menu">
         <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                 <?php
                     query_posts(array(
                     'post_type' => 'Promotions',
@@ -35,7 +35,7 @@
                 <?php while( have_rows('pw_apropos_blocs') ): the_row(); ?>
 
                     <?php if (get_row_layout() == 'pw_notre_histoire'): ?>
-                        <section class="histoire">
+                        <section class="histoire" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_notre_histoire') ) : ?>
                                     <?php the_sub_field('pw_titre_notre_histoire'); ?>
@@ -56,7 +56,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_notre_fondatrice'): ?>
-                        <section class="fondatrice">
+                        <section class="fondatrice" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_fondatrice') ) : ?>
                                     <?php the_sub_field('pw_titre_fondatrice'); ?>
@@ -82,7 +82,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_franchisage'): ?>
-                        <section class="franchisage">
+                        <section class="franchisage" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_franchisage') ) : ?>
                                     <?php the_sub_field('pw_titre_franchisage'); ?>
@@ -101,7 +101,7 @@
                     <?php endif; ?>
 
                     <?php if (get_row_layout() == 'pw_fondation'): ?>
-                        <section class="fondation">
+                        <section class="fondation" data-scrolly="FlipfromBottom">
                             <h2 class="subTitle">
                                 <?php if ( get_sub_field('pw_titre_fondation') ) : ?>
                                     <?php the_sub_field('pw_titre_fondation'); ?>

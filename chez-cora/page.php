@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="wrapper accueil">
+    <div class="wrapper accueil" data-component="Scrolly">
         <button class="btnCommander">Commander</button>
             <section class="hero hero__menu">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-scrolly="FlipfromBottom">
                     <?php
                         query_posts(array(
                         'post_type' => 'Promotions',
@@ -34,13 +34,13 @@
             
         </section>
 
-        <section class="subTittle">
+        <section class="subTittle" data-scrolly="FlipfromBottom"> 
             <p>
                 <?php the_excerpt(); ?>
             </p>
         </section>
 
-        <section class="page-contenu">
+        <section class="page-contenu" data-scrolly="FlipfromBottom">
             <?php the_content(); ?>
         </section>
     </div>
