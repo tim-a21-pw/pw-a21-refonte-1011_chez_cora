@@ -1,5 +1,5 @@
             <div class="wrapper">
-                <div id="IconeScroll">
+                <div class="iconeScroll" id="IconeScroll">
                     <svg class="icon icon--sm Fleche-scroll" data-component="ScrollTop">
                         <use xlink:href="#icon-fleche"></use>
                     </svg>

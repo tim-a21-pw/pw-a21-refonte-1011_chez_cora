@@ -7,15 +7,6 @@ export default class ScrollTop {
   constructor(element) {
     this.element = element;
     this.init();
-
-    this.scrollButton = document.querySelector('#IconeScroll');
-  }
-
-  init() {
-    if (window.pageYOffset === 0) {
-      clearInterval(intervalId);
-    }
-    window.scroll(0, window.pageYOffset - 50);
   }
 
   /**
@@ -23,5 +14,30 @@ export default class ScrollTop {
    */
   init() {
     console.log('Nouvelle instance de la composante -> ScrollTop');
+
+    this.scrollButton = document.querySelector('#IconeScroll');
+    this.scrollButton.addEventListener('click', this.scrollId.bind(this));
+    this.intervalId = setInterval(this.scrollStep.bind(this), 16.66);
   }
+  }
+
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(intervalId);
+    }
+    window.scroll(0, window.pageYOffset - 50);
+  }
+
+  scrollId(evt) {
+    var cible = evt.currentTarget.getAttribute('class');
+
+    window.scroll({
+      top: destination,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
+  scrollToTop() {
+    
 }
