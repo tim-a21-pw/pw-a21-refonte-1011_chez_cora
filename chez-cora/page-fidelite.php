@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <div class="wrapper">
+    <button class="btnCommander">Commander</button>
     <section class="hero hero__menu">
         <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">
             <div class="swiper-wrapper">

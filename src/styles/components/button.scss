@@ -1,0 +1,18 @@
+.btnCommander {
+    border: none;
+    text-transform: none;
+    background-color: var(--color-bg-quaternary);
+    color: var(--color-white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: var(--font-size-commander);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.btnCommander:hover {
+    background-color: var(--color-bg-tertiary);
+}
