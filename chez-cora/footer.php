@@ -5,9 +5,9 @@
                     </svg>
                 </div>
                 
-                <footer>
+                <footer data-component="Scrolly">
                     <div class="socials">
-                        <div class="groupeicone">                                                         
+                        <div class="groupeicone" data-scrolly="FlipfromBottom" >                                                         
                             <?php if ( have_rows('medias_sociaux', 'option') ): ?>
                                 <?php while( have_rows('medias_sociaux', 'option') ): the_row(); ?>  
                                     <div class="icones">
@@ -30,7 +30,7 @@
                             <?php endif; ?> 
                         </div>
 
-                        <div class="groupeicone">                                                          
+                        <div class="groupeicone" data-scrolly="FlipfromBottom">                                                          
                             <?php if ( have_rows('medias_sociaux_2', 'option') ): ?>
                                 <?php while( have_rows('medias_sociaux_2', 'option') ): the_row(); ?>  
                                     <div class="icones">
@@ -54,7 +54,7 @@
                         </div>
                     </div>            
 
-                    <nav>
+                    <nav data-scrolly="FlipfromBottom">
 
                         <?php wp_nav_menu(array(
                             'theme_location' => 'menu_footer',)

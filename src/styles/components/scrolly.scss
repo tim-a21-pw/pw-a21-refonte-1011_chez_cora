@@ -1,18 +1,11 @@
-/* ==========================================================================
-   scrolly / component
-   ========================================================================== */
-
 .has-js {
-    /* Exemple d'animation
-    [data-scrolly='fromBottom'] {
+    [data-scrolly='FlipfromBottom'] {
         opacity: 0;
-        transform: translateY(60px);
-        transition: all 0.4s ease-out;
-
+        transition: all 0.5s ease-out;
+        transform: translateY(100%);
         &.is-active {
             opacity: 1;
             transform: translateY(0);
         }
     }
-    */
 }

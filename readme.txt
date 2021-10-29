@@ -13,7 +13,8 @@ Taches:
 		- Initialisation du WordPress
 		- Création du thème WordPress
 		- Organisation Trello
-		- Bouton Scroll & 'Commander'
+		- Bouton Scroll
+		- ScrollyTelling
 		- Page.php
 		- Page 404
 
