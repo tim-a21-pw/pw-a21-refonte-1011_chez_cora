@@ -1,3 +1,32 @@
+.iconeScroll {
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 15%;
+    right: 0;
+
+    background-color: var(--color-bg-quinary);
+    border-radius: 100%;
+    border: solid 3px var(--color-black);
+    text-align: center;
+
+    width: 40px;
+    height: 40px;
+
+    padding-bottom: 5px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        svg {
+            height: 1em;
+            width: 1em;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        bottom: 10%;
+    }
+}
+
 footer {
     width: 100%;
     display: flex;
