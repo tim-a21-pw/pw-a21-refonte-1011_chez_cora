@@ -13,7 +13,7 @@ Taches:
 		- Initialisation du WordPress
 		- Création du thème WordPress
 		- Organisation Trello
-		- Bouton Scroll & Commander
+		- Bouton Scroll & 'Commander'
 		- Page.php
 		- Page 404
 
@@ -26,7 +26,7 @@ Taches:
 		- Dev Page Nous Joindre
 		- Dev Page À Propos
 		- Organisation Trello
-		- Readme.txt
+		- Readme.txt + Readme.md
 		- Page 404
 
 Pages:
