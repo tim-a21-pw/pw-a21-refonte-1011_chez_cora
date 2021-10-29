@@ -76,11 +76,24 @@
                 width: 100%;
             }
             img {
+                padding: var(--spacing-md);
                 height: 400px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 object-fit: contain;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    padding: var(--spacing-sm);
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    padding: var(--spacing-xs);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding: var(--spacing-sm);
+                }
             }
 
             .contenu {

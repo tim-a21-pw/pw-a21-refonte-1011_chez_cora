@@ -21,10 +21,6 @@
     h2 {
         background-color: var(--color-bg-quaternary);
         color: var(--color-white);
-
-        &:nth-child(2) {
-            background-color: var(--color-bg-tertiary);
-        }
     }
 
     h3 + p,
