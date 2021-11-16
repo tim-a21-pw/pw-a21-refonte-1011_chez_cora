@@ -39,7 +39,7 @@ header {
         list-style-type: none;
         padding: 0;
     }
-    #menu-menu-principal {
+    #menu-menu-principal-fr {
         li {
             font-weight: var(--fw-semibold);
         }
@@ -50,9 +50,10 @@ header {
         text-transform: uppercase;
     }
 
-    .langue {
+    .lang-item {
         cursor: pointer;
         margin: var(--spacing-xs) 0;
+        font-weight: var(--fw-semibold);
     }
 
     .coordonnerU {

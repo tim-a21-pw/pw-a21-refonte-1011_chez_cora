@@ -36,10 +36,6 @@
                     'theme_location' => 'menu_secondaire',)
                 ); ?>
 
-                <div class="langue">
-                    <p>English</p>
-                </div>
-
                 <div class="trouver_restaurant">
                     <a href="https://alanglois.dectim.ca/cours/pw/tp1/nous-joindre/#wpgmza_map">
                         <button>
@@ -79,11 +75,6 @@
                     <?php wp_nav_menu(array(
                         'theme_location' => 'menu_secondaire',)
                     ); ?>
-
-                    <div class="langue">
-                        <p>English</p>
-                    </div>
-
                     <div class="trouver_restaurant">
                         <p>
                             Trouver un <br />
@@ -106,3 +97,5 @@
                 </nav>
             </nav>
         </header>
+
+        
