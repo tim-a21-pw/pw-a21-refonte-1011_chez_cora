@@ -110,8 +110,8 @@
                 <?php endwhile; ?>
             <?php endif; ?>
 
-            <section class="formulaire" id="formulaire">
+            <section class="formulaire" id="formulaire" data-scrolly="FlipfromBottom">
                 <?php the_content(); ?>
             </section>
     </div>
-            <?php get_footer(); ?>
+<?php get_footer(); ?>

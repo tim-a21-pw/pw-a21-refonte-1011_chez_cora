@@ -167,3 +167,5 @@ if ( function_exists('acf_add_options_page') ) {
         
     }
     add_action( 'after_setup_theme', 'nd_dosth_theme_setup');
+
+    add_filter( 'gform_confirmation_anchor', 'cora' );
