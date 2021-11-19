@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page À Propos / About Us
+*/
+;?>
+
 <?php get_header(); ?>
 
 <div class="wrapper" data-component="Scrolly">

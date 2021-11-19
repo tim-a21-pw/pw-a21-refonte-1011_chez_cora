@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page fidélité / Loyalty
+*/
+;?>
+
 <?php get_header(); ?>
 
 <div class="wrapper" data-component="Scrolly">

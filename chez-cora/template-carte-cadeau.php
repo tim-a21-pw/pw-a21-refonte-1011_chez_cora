@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page Carte Cadeau / Gift Card
+*/
+;?>
+
 <?php get_header(); ?>
 
 <div class="wrapper" data-component="Scrolly">

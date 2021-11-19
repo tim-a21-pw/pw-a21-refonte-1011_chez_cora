@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page Nous Joindre / Contact us
+*/
+;?>
+
 <?php get_header(); ?>
 
     <div class="wrapper" data-component="Scrolly">

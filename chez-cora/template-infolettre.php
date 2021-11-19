@@ -1,4 +1,11 @@
+<?php
+/*
+Template Name: Page Infolettre / Newsletter
+*/
+;?>
+
 <?php get_header(); ?>
+
  <div class="wrapper" data-component="Scrolly">
     <section class="hero hero__menu" data-scrolly="FlipfromBottom">
             <div class="swiper-container swiper--artistesVedettes" data-component="Carousel">

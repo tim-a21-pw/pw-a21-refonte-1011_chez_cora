@@ -62,7 +62,7 @@
 
                         <?php if ( get_field('copyright', 'options') ) : ?>
                             <p class="copyright">
-                                <?php the_field('copyright', 'options'); ?>
+                                ᴹᴰ Marque déposée de Coramark inc. Copyright 2011 - 2021, Coramark inc. Chez Cora : Déjeuners et dîners. Tous droits réservés.
                             </p>
                         <?php endif; ?>
                     </nav>
@@ -71,7 +71,7 @@
                 <section class="footer--mobile">
                     <?php if ( get_field('copyright', 'options') ) : ?>
                         <p class="copyright--mobile">
-                            <?php the_field('copyright', 'options'); ?>
+                            ᴹᴰ Marque déposée de Coramark inc. Copyright 2011 - 2021, Coramark inc. Chez Cora : Déjeuners et dîners. Tous droits réservés.
                         </p>
                     <?php endif; ?>
                 </section>
