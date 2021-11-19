@@ -14,7 +14,19 @@
         <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/styles/main.css" />
         <script src="<?php bloginfo('template_url') ?>/scripts/main.js" defer></script>
 
+        
         <?php wp_head(); ?>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEE3EB4M4J"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HEE3EB4M4J');
+        </script>
+
     </head>
 
     <body <?php body_class(); ?>> 
